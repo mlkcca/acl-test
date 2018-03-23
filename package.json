@@ -1,0 +1,45 @@
+{
+  "name": "acl-test",
+  "version": "1.0.0",
+  "description": "アクセスコントロールの動作テストです",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/index.js",
+    "test:file": "mocha",
+    "lint:fix": "standard --fix"
+  },
+  "engines": {
+    "node": ">=7.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlkcca/acl-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlkcca/acl-test/issues"
+  },
+  "homepage": "https://github.com/mlkcca/acl-test#readme",
+  "standard": {
+    "globals": [
+      "describe",
+      "it",
+      "before",
+      "expect",
+      "test"
+    ]
+  },
+  "devDependencies": {
+    "mocha": "^5.0.4",
+    "should": "^13.2.1",
+    "standard": "^11.0.1",
+    "supertest": "^3.0.0",
+    "uuid": "^3.1.0"
+  },
+  "dependencies": {
+    "mlkcca": "github:mlkcca/js",
+    "mqtt": "^2.9.1",
+    "websocket": "^1.0.24"
+  }
+}
